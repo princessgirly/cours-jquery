@@ -1,4 +1,5 @@
-// Avant de commencer 1ère phrase à écrire
+// Charger le lien de la librairie jquery dans header et animation.css
+// Avant de commencer 1ère déclaration jquery
 
 <script>
   $(document).ready(function() {
@@ -6,7 +7,8 @@
 </script>
 
 
-// jquery sélectionne souvent un élément html avec un selector ex faire rebondir des boutons
+// jquery sélectionne souvent un élément html = sélector (button)ex faire rebondir des boutons
+// bounce est la classe de l'animation css
 
 <script>
   $(document).ready(function() {
