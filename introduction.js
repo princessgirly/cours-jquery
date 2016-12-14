@@ -56,3 +56,15 @@ $("#target2").removeClass("btn-default");
 
 $("#target1").css("color", "blue");
 
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color","red");
+  });
+</script>
+
+//Lorsque vous désactivez un bouton, il deviendra grisées et ne peut plus être cliqué.
+//jQuery a une fonction appelée .prop()qui vous permet d'ajuster les propriétés des éléments.
+//Voici comment vous pouvez désactiver tous les boutons:
+
+$("button").prop("disabled", true);
