@@ -63,6 +63,7 @@ $("#target1").css("color", "blue");
   });
 </script>
 
+
 //Lorsque vous désactivez un bouton, il deviendra grisées et ne peut plus être cliqué.
 //jQuery a une fonction appelée .prop()qui vous permet d'ajuster les propriétés des éléments.
 //Voici comment vous pouvez désactiver tous les boutons:
@@ -75,3 +76,66 @@ $("button").prop("disabled", true);
 
   });
 </script>
+
+
+//jQuery a une fonction appelée .html()qui vous permet d' ajouter des balises et du texte HTML dans un élément. 
+$("h3").html("<em>jQuery Playground</em>");
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target4").html("<em>#target4</em>");
+  });
+</script>
+
+//Supprimer un élément HTML de votre page en utilisant jQuery.
+//jQuery a une fonction appelée .remove()qui va supprimer un élément HTML entièrement
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("button").remove("#target4");
+
+  });
+</script>
+
+// déplacer des éléments d'un divà l' autre.
+//jQuery a une fonction appelée appendTo()qui vous permet de sélectionner des éléments HTML et ajoutez - les à un autre élément.
+//Par exemple, si nous voulions passer target4de notre droite et à notre bien à gauche, nous utiliserons:
+
+$("#target4").appendTo("#left-well");
+
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+  });
+</script>
+
+<!-- Only change code above this line. -->
+
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
