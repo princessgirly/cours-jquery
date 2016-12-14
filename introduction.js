@@ -139,3 +139,99 @@ $("#target4").appendTo("#left-well");
     </div>
   </div>
 </div>
+
+
+//En plus des éléments en mouvement, vous pouvez également les copier d'un endroit à l'autre.
+//jQuery a une fonction appelée clone()qui fait une copie d'un élément.
+//Par exemple, si nous voulions copier target2de notre left-wellà notre right-well, nous utiliserons:
+//Avez - vous remarqué cela implique de coller deux fonctions jQuery ensemble? Ceci est appelé function chaininget il est un moyen pratique de faire avancer les choses avec jQuery.
+
+$("#target2").clone().appendTo("#right-well");
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+  });
+</script>
+
+//Chaque élément HTML possède un élément parent à partir duquel il hérite des propriétés.
+//Par exemple, votre jQuery Playground h3élément a l'élément parent de <div class="container-fluid">, qui a lui - même parent body.
+//jQuery a une fonction appelée parent()qui vous permet d'accéder à la société mère de quel élément que vous avez sélectionné.
+//Voici un exemple de la façon dont vous pouvez utiliser la parent()fonction si vous vouliez donner l'élément parent de l' left-wellélément d' une couleur de bleu de fond:
+
+$("#left-well").parent().css("background-color", "blue")
+
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red")
+  });
+</script>
+
+
+//De nombreux éléments HTML ont childrenqui inheritleurs propriétés de leurs éléments parent HTML.
+//Par exemple, chaque élément HTML est un enfant de votre bodyélément, et votre "jQuery Playground" h3élément est un enfant de votre <div class="container-fluid">élément.
+//jQuery a une fonction appelée children()qui vous permet d'accéder aux enfants de quel élément que vous avez sélectionné.
+//Voici un exemple de la façon dont vous pouvez utiliser la children()fonction de donner aux enfants de votre left-wellélément la couleur de bleu:
+
+$("#left-well").children().css("color", "blue")
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+  });
+</script>
+
+
+//jQuery utilise CSS sélecteurs pour cibler des éléments. target:nth-child(n)sélecteur css vous permet de sélectionner tous les éléments nième avec la classe cible ou type d'élément.
+//Voici comment vous donner le troisième élément dans chaque puits de la classe de rebond:
+
+$(".target:nth-child(3)").addClass("animated bounce");
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+    $(".target:nth-child(2)").addClass("animated bounce");
+  });
+</script>
+
+//Vous pouvez également cibler tous les éléments de numéro pair.
+//Voici comment vous souhaitez cibler tous les éléments impairs avec la classe targetet leur donner des cours:
+
+$(".target:odd").addClass("animated shake");    //impair
+$(".target:even").addClass("animated shake");   //pair
+
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+    $("#left-well").children().css("color", "green");
+    $(".target:nth-child(2)").addClass("animated bounce");
+    $(".target:even").addClass("animated shake");
+  });
+</script
