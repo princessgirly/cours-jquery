@@ -68,3 +68,10 @@ $("#target1").css("color", "blue");
 //Voici comment vous pouvez désactiver tous les boutons:
 
 $("button").prop("disabled", true);
+
+<script>
+  $(document).ready(function() {
+    $("#target1").prop("disabled", true);
+
+  });
+</script>
