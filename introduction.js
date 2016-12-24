@@ -1,4 +1,4 @@
-// Charger le lien de la librairie jquery dans header et animation.css
+// Charger le lien de la librairie jquery dans header et animation.css voir site cdn jquery
 // Avant de commencer 1ère déclaration jquery
 
 <script>
