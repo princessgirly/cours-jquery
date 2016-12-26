@@ -255,3 +255,7 @@ $("body").addClass("animated fadeOut");
     $("body").addClass("animated hinge");               //animation toute la page tombe et est supprimée   
    });
 </script>
+
+
+//Change le fond'ecran du body et html en même temps
+      $('body, html').css('background', 'url(img/images.jpg)');
