@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Aclonica|Bungee+Shade|Cabin+Sketch|Creepster|Ewert|Fredericka+the+Great|Lobster|Rochester');
+/*
+font-family: 'Lobster', cursive;
+font-family: 'Aclonica', sans-serif;
+font-family: 'Rochester', cursive;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Bungee Shade', cursive;
+font-family: 'Ewert', cursive;
+font-family: 'Creepster', cursive;
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #85cff7;
+  text-align: center;
+}
+body{
+  height: auto;
+  width: auto;
+  text-align: center;
+}
+h1 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  width: 1200px;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 90px;
+  background-color: white;
+  border-radius: 10px;
+}
+h2 {
+  margin-bottom: 20px;
+  margin-left: 20%;
+  border: 1px solid white;
+  width: 900px;
+  font-family: 'Rochester', cursive;
+  font-size: 70px;
+  color: white;
+  border-radius: 10px;
+}
+#premier {background-color: #66FF66;}
+#second {background-color: #FF9933;}
+#troisieme {background-color: #FF99CC;}
+#list {
+  font-size: 100px;
+  font-family: 'Fredericka the Great', cursive;
+  display: inline-flex;
+  list-style-type: none;
+  background-color: white;
+}
+li {
+  margin-right: 5px;
+  background-color: white;
+  padding: 5px;
+}
+button {
+  background-color: #CCCCFF;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  outline:none;
+}
+mark {
+  font-size: 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  border-width: medium;
+  padding: 3px 10px 3px 10px;
+}
+#play {
+  margin-top: 5px;
+}
