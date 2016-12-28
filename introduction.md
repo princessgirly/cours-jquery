@@ -2,6 +2,15 @@
 ![tableau](img/01.png)
 
 
+La balise <img src="chien.jpg" width="40" height="30"> contient trois attributs : src, width et height. 
+Pour sélectionner toutes les balises qui contiennent un attribut src, vous utiliserez le sélecteur [src].
+
+Pour sélectionner toutes les balises dont l'attribut width a pour valeur 40, vous utiliserez le sélecteur [width="40"].
+
+Le caractère * représente toutes les balises du document.
+
+
+
 // Charger le lien de la librairie jquery dans header et animation.css voir site cdn jquery
 // Avant de commencer 1ère déclaration jquery
 
